@@ -1,0 +1,27 @@
+ghosts_list = ["samara", "casper" , "slimer", "beetlejuice"]
+for x in ghosts_list:
+    print(x)
+
+for x in "beetlejuice":
+    print(x)
+
+for x in ghosts_list:
+    print(x)
+    if x == "casper":
+        break
+
+for x in ghosts_list:
+    if x == "slimer":
+        continue
+    print(x)
+
+for x in range(6):
+    print(x)
+else:
+    print("Finished printing")
+
+adj_list = ["Spooky", "Evil", "Macabre", "Silly"]
+
+for x in adj_list:
+    for y in ghosts_list:
+        print(x, y)
