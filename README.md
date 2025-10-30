@@ -1,1 +1,7 @@
-# STEM103_Level3_1-ForLoop
+# STEM103
+Fall 2025
+
+# Author
+Benit Steele
+
+# Description - For loops
