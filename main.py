@@ -1,12 +1,16 @@
 mission_names = ['Apollo 11', 'Challenger', 'Curiosity Rover', 'Viking 1', 'Mars Pathfinder', 'Hubble Telescope', 'Apollo 13']
 mission_years = [1969, 1986, 2012, 1975, 1996, 1990, 1970]
 mission_success = [True, False, True, True, True, True, False]
-number_of_names = len(mission_names)
-print(f"Total number of missions: {number_of_names}")
-item_to_count = True
-count = mission_success.count(item_to_count)
-print(f"Number of successful missions: {count}")
-
+number_of_names = len(mission_names) # Making sure the names of the mission are seen as a length
+successful_missions = len(mission_success) # Making sure the successfulness of the missions are seen as a length
+print(f"Total number of missions: {number_of_names}") # Telling us how many total missions there were
+item_to_count = True # Having the code store our true values 
+count = mission_success.count(item_to_count) # Having the code look for "True" items only
+print(f"Number of successful missions: {count}") # Seeing how many "True" successes we have
+percentage_success = (count / successful_missions) * 100 
+percentage_rounded = round(percentage_success, 2)
+print(f"Success rate: {percentage_rounded}%") # Percentage of the success rate from how many "True" items we had in successful missions
+print("Missions launched before the year 2000:")
 
 
 
